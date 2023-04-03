@@ -1,0 +1,25 @@
+// ----- [ FONTS ] ----- //
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Montserrat:wght@400;700&display=swap');
+
+// ----- [ CONTAINER ] ----- //
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1200px) {
+        max-width: 900px;
+    }
+    @media screen and (max-width: 900px) {
+        max-width: 700px;
+    }
+    @media screen and(max-width:620px) {
+        max-width: 500px;
+    }
+    @media screen and(max-width:500px) {
+        max-width: 400px;
+    }
+}
+
+body {
+    background-color: $primary-color;
+}

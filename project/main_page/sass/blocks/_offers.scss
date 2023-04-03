@@ -1,0 +1,87 @@
+.section__offer {
+    position: relative;
+    z-index: 200;
+    background-color: $primary-color;
+}
+
+.section__offer h1 {
+    margin-top: 108px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #564E47;
+    text-align: center;
+}
+
+.section__offer p {
+    text-align: center;
+    margin-top: 102px;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: $seconadry-text-color;
+}
+
+//carousel
+
+.wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .carousel {
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+    pointer-events: none;
+}
+
+.wrapper img {
+    height: 40px;
+    width: 40px;
+    margin: 0 20px;
+}
+
+#left,#right {
+    @media  screen and (max-width:560px){
+        display: none;
+    }
+}
+
+.carousel img {
+    height: 300px;
+    width: calc(100%/3 - 25px);
+    object-fit: cover;
+    margin-left: 20px;
+    border-radius: 15px;
+
+    @media screen and (max-width: 920px) {
+        width: calc(100%/2 - 10px);
+    }
+
+    @media screen and (max-width: 560px) {
+        width: calc(100% - 20px)
+    }
+}
+
+.carousel img:first-child {
+    margin-left: 10px;
+}

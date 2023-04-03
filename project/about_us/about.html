@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/about.css">
+    <script src="https://kit.fontawesome.com/0273b4362e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav__logo">
+                    <img src="../img/logo/logo.png" alt="logotype">
+                    <strong>Demonatage 24</strong>
+                </div>
+                <div class="nav__contacts">
+                        <a href="./about.html">Обратная связь</a>
+                        <a href="/apihtml/api.html">API</a>
+                        <a href="/main_page/index.html">Главная</a>
+                        <p class="menu">Menu</p>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="feedback-form">
+                <div class="feedback-form__left-side">
+                    <div class="feedback-form__left-side__adress details">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="feedback-form__left-side__adress__topic topic">Adress</div>
+                        <div class="feedback-form__left-side__adress__city text-one">Moscow</div>
+                        <div class="feedback-form__left-side__adress__name text-two">Lorem ipsum dolor sit amet.</div>
+                    </div>
+                    <div class="feedback-form__left-side__phone details">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="feedback-form__left-side__phone__topic topic">Телефон</div>
+                        <div class="feedback-form__left-side__phone__first text-one">8-985-071-14-82</div>
+                        <div class="feedback-form__left-side__phone__second text-two">8-985-071-14-82</div>
+                    </div>
+                    <div class="feedback-form__left-side__email details">
+                        <i class="fas fa-envelope"></i>
+                        <div class="feedback-form__left-side__email__topic topic">Email</div>
+                        <div class="feedback-form__left-side__email__city text-one">igor14abramov@gmail.com</div>
+                        <div class="feedback-form__left-side__email__name text-two">helloworld@list.ru</div>
+                    </div>
+                </div>
+                <div class="feedback-form__right-side">
+                    <div class="feedback-form__right-side__topic-text">Отправьте нам сообщение</div>
+                    <p>Обратитесь к нашим услугам, заполните форму ниже!</p>
+                    <form action="#" id="form" name="form">
+                        <div class="feedback-form__right-side__input-box">
+                            <input type="text" placeholder="Введите ваше Имя" id="name" name="name" data-reg="^[а-яА-ЯёЁa-zA-Z0-9]+$">
+                            <label for="name">Только русские и английские буквы</label>
+                        </div>
+                        <div class="feedback-form__right-side__input-box">
+                            <input type="text" placeholder="Введите ваш Email" id="email" name="email" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+                            <label for="email">В формате admin@mail.com</label>
+                        </div>
+                        <div class="feedback-form__right-side__input-box">
+                            <input type="text" placeholder="Введите ваш номер телефона" id="phone" name="phone" data-reg="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                            <label for="phone">formation +7 xxx xxx xx xx, 8 и 7</label>
+                        </div>
+                        <div class="feedback-form__right-side__input-box message-box">
+                            <textarea placeholder="Сообщение"></textarea>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Отправить" id="form-button" name="form-button">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./about.js/valid.js"></script>
+</body>
+</html>

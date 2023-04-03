@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/api.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav__logo">
+                    <img src="../img/logo/logo.png" alt="logotype">
+                    <strong>Demonatage 24</strong>
+                </div>
+                <div class="nav__contacts">
+                        <a href="/about_us/about.html">Обратная связь</a>
+                        <a href="">API</a>
+                        <a href="/main_page/index.html">Главная</a>
+                        <p class="menu">Menu</p>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="quiz">
+                <div class="text" style="text-align: center;">Введите месяц ( от 1 до 12) и день этого месяца и получите интересный факт, связанный с этой датой!</div>
+                <div class="quiz__left-side">
+                    <div class="quiz__input-one quiz__input">
+                        <input class="input1" type="number" name="input-one">
+                        <label for="input-one">Введите месяц цифрой от 1 до 12 (1-январь, 12 - декабрь)</label>
+                    </div>    
+                    <div class="quiz__input-two quiz__input">
+                        <input class="input2" type="number" name="input-two">
+                        <label for="input-two">Введите день данного месяца. Например, 25.</label>
+                    </div>
+                    <button class="quiz__btn">Получить данные</button><br>
+                </div> 
+            </div>  
+        </div>
+    </section>
+    <script src="/apihtml/api.js/api.js"></script>
+</body>
+</html>
